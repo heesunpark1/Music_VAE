@@ -42,8 +42,8 @@ VAE는 Input data X를 잘 설명하는 feature를 추출하여 Latent vector z�
 - Counstructor : latent space에서 추출한 이상적인 샘플링 값을 디코더로 보내는 역할.
   
   
-VAE 장단점
-장점 : 확률 모델을 기반으로 했기 때문에, 잠재 코드를 더 유연하게 계산할 수 있다.
-단점 : Density를 직접적으로 구한것이 아니기 때문에 Pixel RNN/CNN 과 같이 직접적으로 Density를 구한 모델보다는 성능이 떨어진다.
+### VAE 장단점
+- 장점 : 확률 모델을 기반으로 했기 때문에, 잠재 코드를 더 유연하게 계산할 수 있다.
+- 단점 : Density를 직접적으로 구한것이 아니기 때문에 Pixel RNN/CNN 과 같이 직접적으로 Density를 구한 모델보다는 성능이 떨어진다.
 
 
