@@ -1,5 +1,7 @@
 # Pozalabs_Assignment
 
+### 안녕하세요, 저는 포자랩스 지원자 박희선입니다. 먼저 과제를 수행할 수 있는 기회를 주셔서 감사드립니다. 
+
 ## 과제: Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
 
 - 참고논문: "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music" https://arxiv.org/pdf/1803.05428.pdf
