@@ -1,6 +1,6 @@
 # Pozalabs_Assignment
 
-## 이 레포지토리는 포자랩스 과제 제출을 위한 레포지토리입니다
+# 이 레포지토리는 포자랩스 과제 제출을 위한 레포지토리입니다
 
 과제: Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
 
