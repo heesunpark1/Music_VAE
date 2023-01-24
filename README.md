@@ -8,7 +8,7 @@
 
 
 #### Dependency 이슈 : magenta 2.1.0 버전을 설치해야한다는 깃허브 이슈를 참고했습니다. 그렇지만 제가 코랩에서 설치한 2.1.4 버전은 에러가 개선되어 무사히 과제를 진행할 수 있었습니다. 
-#### Trouble Shooting: 미디 악보 데이터를 오디오 신호로 변환하는 libfluidsynth1의 에러가 발생해 libfluidsynth2로 재설치하여 과제를 진행
+#### Trouble Shooting: 미디 악보 데이터를 오디오 신호로 변환하는 libfluidsynth1의 에러가 발생해 libfluidsynth2로 재설치하여 과제를 진행했습니다.
 
 
 데이터셋 설명
@@ -25,7 +25,10 @@
 - duration: The float duration in seconds (of the MIDI).||
 - split: The predefined split the performance is a part of. One of “train”, “validation”, or “test”.||
 
+  
 ## VAE란?
+  
+VAE는 Input data X를 잘 설명하는 feature를 추출하여 Latent vector z에 담고, 이 Latent vector z를 통해 X와 유사하지만 완전히 새로운 데이터를 생성하는 것을 목표로 합니다. 이때 각 feature가 가우시안 분포를 따른다고 가정하고 latent z는각 feature의 평균과 분산값을 나타낸다.  
   
 ### VAE 모델 구조
 
@@ -36,11 +39,11 @@
 - Encoder - BidirectionalLSTM(양방향 LSTM) : input을 latent space로 변환
 - Decoder-  Hierarchical Decoder(계층적 디코더) : encoder와 반대로 latent space를 input으로 변환
 - latent space(code) : Gaussian 확률분포에 기반한 이상적인 샘플링 벡터들의 집합이라고 이해했다.  이 latent space가 주어져야, decoder는 이를 활용해 data를 generate할 수 있다.
-- Counstructor : latent space에서 추출한 이상적인 샘플링 값(z)를 디코더로 보내는 역할.
+- Counstructor : latent space에서 추출한 이상적인 샘플링 값을 디코더로 보내는 역할.
   
   
 VAE 장단점
 장점 : 확률 모델을 기반으로 했기 때문에, 잠재 코드를 더 유연하게 계산할 수 있다.
-단점 :  직접적으로 구한것이 아니기 때문에 Pixel RNN/CNN 과 같이 직접적으로 Density를 구한 모델보다는 성능이 떨어진다.
+단점 : Density를 직접적으로 구한것이 아니기 때문에 Pixel RNN/CNN 과 같이 직접적으로 Density를 구한 모델보다는 성능이 떨어진다.
 
 
