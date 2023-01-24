@@ -2,7 +2,7 @@
 
 # 이 레포지토리는 포자랩스 과제 제출을 위한 레포지토리입니다
 
-과제: Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
+## 과제: Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
 
 - 참고논문: "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music" https://arxiv.org/pdf/1803.05428.pdf
 - 참고 Github link : https://github.com/magenta/magenta/tree/main/magenta/models/music_vae
