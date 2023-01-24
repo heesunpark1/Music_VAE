@@ -28,7 +28,7 @@
   
 ## VAE란?
 
-AE는 입력값으로 넣은 데이터를 통해 출력값으로 내보낼 한점을 만들지만, VAE는 Input data X를 잘 설명하는 feature를 추출하여 Latent vector z에 담고, 이 Latent vector z를 통해 X와 유사하지만 완전히 새로운 데이터를 생성하는 것을 목표로 합니다. 이때 각 feature가 가우시안 확률분포를 따른다고 가정하고 latent z는각 feature의 평균과 분산값을 나타낸다.  
+AE는 입력값으로 넣은 데이터를 통해 출력값으로 내보낼 한점을 만들지만, VAE는 Input data X를 잘 설명하는 feature를 추출하여 Latent vector z에 담고, 이 Latent vector z를 통해 X와 유사하지만 완전히 새로운 데이터를 생성하는 것을 목표로 다. 이때 각 feature가 가우시안 확률분포를 따른다고 가정하고 latent z는각 feature의 평균과 분산값을 나타낸다.  
   
 ### VAE 모델 구조
 
