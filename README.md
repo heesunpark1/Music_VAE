@@ -1,7 +1,5 @@
 # Pozalabs_Assignment
 
-# 이 레포지토리는 포자랩스 과제 제출을 위한 레포지토리입니다
-
 ## 과제: Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
 
 - 참고논문: "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music" https://arxiv.org/pdf/1803.05428.pdf
@@ -26,17 +24,23 @@
 - audio_filename:	Relative path to the WAV file (if present).||
 - duration: The float duration in seconds (of the MIDI).||
 - split: The predefined split the performance is a part of. One of “train”, “validation”, or “test”.||
+
+## VAE란?
   
-  
-## 모델 구조
+### VAE 모델 구조
 
 <p align="center">
 <img src="https://miro.medium.com/max/828/1*5Hx_2zTLXablceCOMpAP-g.webp" width="600" height="400" /> 
 </p>
   
 Encoder - BidirectionalLSTM(양방향 LSTM) : input을 latent space로 변환
-
 Decodef -  Hierarchical Decoder(계층적 디코더) : encoder와 반대로 latent space를 input으로 변환
-latent space(
+latent space(code) : Gaussian 확률분포에 기반한 출력값으로 내보낼 벡터들의 집합이라고 이해했다. 
+Counstructor : latent space에서 추출한 이상적인 샘플링 값(z)를 디코더로 보내는 역할.
+  
+  
+VAE 장단점
+장점 : 확률 모델을 기반으로 했기 때문에, 잠재 코드를 더 유연하게 계산할 수 있다.
+단점 :  직접적으로 구한것이 아니기 때문에 Pixel RNN/CNN 과 같이 직접적으로 Density를 구한 모델보다는 성능이 떨어진다.
 
 
