@@ -33,10 +33,10 @@
 <img src="https://miro.medium.com/max/828/1*5Hx_2zTLXablceCOMpAP-g.webp" width="600" height="400" /> 
 </p>
   
-Encoder - BidirectionalLSTM(양방향 LSTM) : input을 latent space로 변환
-Decodef -  Hierarchical Decoder(계층적 디코더) : encoder와 반대로 latent space를 input으로 변환
-latent space(code) : Gaussian 확률분포에 기반한 출력값으로 내보낼 벡터들의 집합이라고 이해했다. 
-Counstructor : latent space에서 추출한 이상적인 샘플링 값(z)를 디코더로 보내는 역할.
+- Encoder - BidirectionalLSTM(양방향 LSTM) : input을 latent space로 변환
+- Decodef -  Hierarchical Decoder(계층적 디코더) : encoder와 반대로 latent space를 input으로 변환
+- latent space(code) : Gaussian 확률분포에 기반한 출력값으로 내보낼 벡터들의 집합이라고 이해했다.  이 latent space가 주어져야, decoder는 이를 활용해 data를 generate할 수 있다.
+- Counstructor : latent space에서 추출한 이상적인 샘플링 값(z)를 디코더로 보내는 역할.
   
   
 VAE 장단점
