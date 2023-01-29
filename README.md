@@ -1,4 +1,4 @@
-# Music0_VAE
+# Music_VAE
 
 Music VAE, Groove MIDI Dataset를 이용하여 4마디에 해당하는 드럼 샘플 추출
 
